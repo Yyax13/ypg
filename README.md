@@ -1,6 +1,6 @@
 # YPG
 
-> YProjects Gerenciator
+> YProjects Gerenciator (Linux only)
 
 ## How to use
 
@@ -8,7 +8,7 @@ clone the repo or download the project zip archive
 
 go to the directory where ypg has been install
 
-in windows and linux: `sudo bash install.sh` (needs sudo)
+run this command on terminal: `sudo bash install.sh` (needs sudo)
 
 ## Web Mode
 to create the web project, run ```ypg -w -n [name]``` or ```ypg --web -n [name]```
