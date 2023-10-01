@@ -31,7 +31,7 @@ if args.web:
 <body class="bg-zinc-950">
     <div class="text-center flex items-center justify-center">
         <h1 class="text-zinc-50 font-semibold text-7xl font-mono shadow-zinc-200">Criado com YPG</h1>
-        <p class="text-zinc-300 shadow-zinc-400 font-mono text-sm">Download ypg lastest version <a class="text-zinc-300 shadow-zinc-400 italic font-mono text-sm hover:text-purple-100 hover:text-lg" href="https://github.com/Yyax13/ypg">here</a></p>
+        <p class="text-zinc-300 shadow-zinc-400 font-mono text-sm">Download ypg lastest version <a class="transition-all duration-300 ease-in-out text-zinc-300 shadow-zinc-400 italic font-mono text-sm hover:text-purple-100 hover:text-lg" href="https://github.com/Yyax13/ypg">here</a></p>
         <p class="text-zinc-600 text-xs>you can use the app.tsx on /assets/app.tsx in your project</p>
     </div>
 </body>
