@@ -21,10 +21,7 @@ to create the project, run ```ypg -pt -n [name]``` or ```ypg --python-terminal -
 to run the python terminal-side project, run ```python main.py``` in terminal/cmd (on the project directory), and the server will start
 
 ## LICENSE
-You can use ypg for non-comercial projects and comercial use, its open for everyone, you can do what you wants
-- no tax
-- no limits
-Welcome to the revenge
+We Use the [MIT LICENSE](LICENSE)
 
 ## Support
 I'm the support, contact-me on discord or telegram
