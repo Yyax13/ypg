@@ -63,7 +63,7 @@ port = 5590
 handler = CustomHTTPRequestHandler 
 
 with socketserver.TCPServer(("", port), handler) as httpd:
-    print(f"Servidor rodando em http://localhost:{port}")
+    print(f"Server running at http://localhost:{port}")
     httpd.serve_forever()
 """
     TheCreature.create_archive(content=serverP, arqName="server", ext="py", ProjPath=f"{ProjectName}")
@@ -129,7 +129,7 @@ I'm the support, contact-me on discord or telegram
 
 elif args.python_terminal:
 
-    Carregante.start(texto="Iniciando projeto python (terminal-side) com prmTools (pre-made tools)", NV=2)
+    Carregante.start(texto="Starting a python (terminal-side) project with prmTools (pre-made tools)", NV=2)
     mainP = """from misc import update
 update.pip(package="yollor") #Do not delete these lines, they are the requeriments installer for the prmTools"""
     TheCreature.create_archive(content=mainP, arqName="main", ext="py", ProjPath=f"{ProjectName}")
