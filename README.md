@@ -23,6 +23,11 @@ to run the python terminal-side project, run ```python main.py``` in terminal/cm
 ## LICENSE
 We Use the [[MIT LICENSE](LICENSE)](https://github.com/Yyax13/ypg/blob/main/LICENSE)
 
+## Update logs
+Welcome to ypg 1.0.2 logs:
+- All in english
+- README with tailwind.config.js > Fixed
+
 ## Support
 I'm the support, contact-me on discord or telegram
 
