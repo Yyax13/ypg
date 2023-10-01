@@ -21,7 +21,7 @@ to create the project, run ```ypg -pt -n [name]``` or ```ypg --python-terminal -
 to run the python terminal-side project, run ```python main.py``` in terminal/cmd (on the project directory), and the server will start
 
 ## LICENSE
-We Use the [MIT LICENSE](LICENSE)
+We Use the [[MIT LICENSE](LICENSE)](https://github.com/Yyax13/ypg/blob/main/LICENSE)
 
 ## Support
 I'm the support, contact-me on discord or telegram
