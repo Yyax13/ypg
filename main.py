@@ -68,7 +68,10 @@ with socketserver.TCPServer(("", port), handler) as httpd:
 """
     TheCreature.create_archive(content=serverP, arqName="server", ext="py", ProjPath=f"{ProjectName}")
     
-    indexTSX = """"""
+    indexTSX = """// free for use
+// https://github.com/Yyax13/ypg
+
+// Insert your code here"""
     TheCreature.create_archive(content=indexTSX, arqName="app", ext="tsx", ProjPath=f"{ProjectName}/assets")
    
     tconfigJ = """/** @type {import('tailwindcss').Config} */
