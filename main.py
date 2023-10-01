@@ -10,15 +10,15 @@ from misc import create as TheCreature
 from misc import tools as FerramentaDePedrero
 
 parser = argparse.ArgumentParser(description='YProjects Manager')
-parser.add_argument('--web', '-w', action='store_true', help='Ativar o modo Web')
-parser.add_argument('--python-terminal', '-pt', action='store_true', help='Ativar o modo Terminal Python')
-parser.add_argument('-n', '--name', default='Y-Project', help='Nome do projeto')
+parser.add_argument('--web', '-w', action='store_true', help='Web Mode')
+parser.add_argument('--python-terminal', '-pt', action='store_true', help='Python 4 Terminal mode')
+parser.add_argument('-n', '--name', default='Y-Project', help='Project name')
 args = parser.parse_args()
 ProjectName = str(args.name)
 
 if args.web:
 
-    Carregante.start(texto="Iniciando projeto web com TailwindCSS e TypeScript", NV=2)
+    Carregante.start(texto="Starting your project with TailwindCSS and TypeScript", NV=2)
 
     indexH = """<!DOCTYPE html>
 <html>
@@ -144,7 +144,7 @@ update.pip(package="yollor") #Do not delete these lines, they are the requerimen
 from misc import loading as Carregante
 
 def pip(package):
-    Carregante.start(texto="Instalando as dependencias", NV=7)
+    Carregante.start(texto="Installing Depedencies", NV=7)
     MinT.system(f'pip install {package} --user -q' if MinT.name == 'nt' else f'pip install {package} -q')
     MinT.system(f'pip install {package} -q' if MinT.name == 'nt' else f'pip install {package} --user -q')
 """
@@ -237,4 +237,4 @@ I'm the support, contact-me on discord or telegram
     TheCreature.create_archive(content=readmeM, arqName="README", ext="md", ProjPath=f"{ProjectName}")
 
 if args.web and args.python_terminal:
-    print("Você não pode ativar o modo Web e o modo Terminal Python ao mesmo tempo.")
+    exit("Use only one argument")
