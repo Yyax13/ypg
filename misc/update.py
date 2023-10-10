@@ -1,4 +1,9 @@
 import os as MinT
 
 def pip(package):
-    MinT.system(f'pip install {package} --user -q' if MinT.name == 'nt' else f'pip install {package} -q')
+    try:
+        subprocess.check_output(["pip", "show", package])
+        print(f'O pacote {package} já está instalado.')
+    except subprocess.CalledProcessError:
+        os.system(f'pip install {package}')
+        print(f'O pacote {package} foi instalado.')
