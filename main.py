@@ -139,9 +139,12 @@ update.pip(package="yollor") #Do not delete these lines, they are the requerimen
 from misc import loading as Carregante
 
 def pip(package):
-    Carregante.start(texto="Installing Depedencies", NV=7)
-    MinT.system(f'pip install {package} --user -q' if MinT.name == 'nt' else f'pip install {package} -q')
-    MinT.system(f'pip install {package} -q' if MinT.name == 'nt' else f'pip install {package} --user -q')
+    try:
+        subprocess.check_output(["pip", "show", package])
+        print(f'{package} already installed')
+    except subprocess.CalledProcessError:
+        os.system(f'pip install {package}')
+        print(f'Done')
 """
     TheCreature.create_archive(content=updtP, arqName="update", ext="py", ProjPath=f"{ProjectName}/misc")
 
