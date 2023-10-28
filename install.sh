@@ -34,5 +34,5 @@ if [[ "$(uname -s)" == "Linux" ]]; then
 elif [[ "$(uname -s)" == "MINGW"* ]]; then
     echo "Non-supported OS, pls use Unix distros"
 else
-    echo "Non-supported OS, pls use Unix distros
+    echo "Non-supported OS, pls use Unix distros"
 fi
