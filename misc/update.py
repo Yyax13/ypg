@@ -1,5 +1,5 @@
 import os as MinT
-
+import subprocess
 def pip(package):
     try:
         subprocess.check_output(["pip", "show", package])
