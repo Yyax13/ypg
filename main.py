@@ -134,8 +134,8 @@ elif args.python_terminal:
 update.pip(package="yollor") #Do not delete these lines, they are the requeriments installer for the prmTools"""
     TheCreature.create_archive(content=mainP, arqName="main", ext="py", ProjPath=f"{ProjectName}")
 
-    updtP = """import os as MinT
-
+    updtP = """import os
+import subprocess
 from misc import loading as Carregante
 
 def pip(package):
