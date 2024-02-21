@@ -1,4 +1,4 @@
-import os as MinT
+import os
 import subprocess
 def pip(package):
     try:

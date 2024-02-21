@@ -136,7 +136,6 @@ update.pip(package="yollor") #Do not delete these lines, they are the requerimen
 
     updtP = """import os
 import subprocess
-from misc import loading as Carregante
 
 def pip(package):
     try:

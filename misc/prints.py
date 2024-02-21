@@ -14,5 +14,3 @@ def banner():
 
 def thanks():
     banner = f"{c.purple('MR. Yyax Says:')} {c.red('I love you <3')}"
-
-thanks()
